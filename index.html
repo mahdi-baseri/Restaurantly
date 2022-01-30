@@ -42,7 +42,7 @@
 
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-phone d-flex align-items-center"><span>09371962511</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span id="time"></span></i>
       </div>
 
       <div class="languages d-none d-md-flex align-items-center">
@@ -939,6 +939,24 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Time show -->
+  <script type="text/javascript">
+    function showTime() {
+        var date = new Date(),
+            utc = new Date(Date.now(
+                date.getFullYear(),
+                date.getMonth(),
+                date.getDate(),
+                date.getHours(),
+                date.getMinutes(),
+                date.getSeconds()
+            ));
+
+        document.getElementById('time').innerHTML = utc.toLocaleTimeString();
+    }
+
+    setInterval(showTime, 1000);
+  </script>
 </body>
 
 </html>
