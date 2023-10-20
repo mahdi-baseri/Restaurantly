@@ -1,5 +1,5 @@
-Template Name: Restauranty
-Author: M.mahdi_bsr
+## Template Name: Restauranty
+## Author: M.mahdi_bsr
 
 # Restaurantly
 
