@@ -1221,6 +1221,9 @@ section {
 #res-gallery{
   display: none;
 }
+#res-gallery-link{
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   #gallery{
     display: none;
